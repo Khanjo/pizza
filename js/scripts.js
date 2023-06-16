@@ -52,7 +52,8 @@ function createPizza(event) {
     pizza.sizeCost();
     pizza.vegCost();
     pizza.meatCost();
-    console.log(pizza)
+    let p = document.getElementById("output");
+    p.append("your pizza will cost $" + pizza.price.toString());
 };
 
 window.addEventListener("load", function () {
