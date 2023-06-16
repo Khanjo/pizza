@@ -39,21 +39,23 @@ Pizza.prototype.meatCost = function () {
 
 // UI Logic
 
+function createPizza(event) {
+    event.preventDefault();
+    let sizeInput = document.getElementById("size").value;
+    let toppingInput = [];
+    let toppingChoice = document.querySelectorAll("input[name=pizzaToppings]:checked");
+
+    toppingChoice.forEach(function (element) {
+        toppingInput.push(element.value);
+    });
+    let pizza = new Pizza(sizeInput, toppingInput);
+    pizza.sizeCost();
+    pizza.vegCost();
+    pizza.meatCost();
+    console.log(pizza)
+};
+
 window.addEventListener("load", function () {
     let form = document.getElementById("makePizza");
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-        let sizeInput = document.getElementById("size").value;
-        let toppingInput = [];
-        let toppingChoice = document.querySelectorAll("input[name=pizzaToppings]:checked");
-
-        toppingChoice.forEach(function (element) {
-            toppingInput.push(element.value);
-        });
-        let pizza = new Pizza(sizeInput, toppingInput);
-        pizza.sizeCost();
-        pizza.vegCost();
-        pizza.meatCost();
-        console.log(pizza);
-    });
+    form.addEventListener("submit", createPizza);
 });
