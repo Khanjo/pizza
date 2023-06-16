@@ -14,34 +14,37 @@
     <h2>It's like family, but with more cheese</h2>
     <h3>Select your pizza size and toppings:</h3>
 
-    <form id="makePizza">
-        <select id="size">
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-        </select>
-        <div id="veggies">
-            <h4>Veggies:</h4>
-            <input type="checkbox" name="pizzaToppings" value="Onion"> Onion<br>
-            <input type="checkbox" name="pizzaToppings" value="Bell Pepper"> Bell Pepper<br>
-            <input type="checkbox" name="pizzaToppings" value="Mushroom"> Mushroom<br>
-            <input type="checkbox" name="pizzaToppings" value="Garlic"> Garlic<br>
-            <input type="checkbox" name="pizzaToppings" value="Olive"> Olive<br>
-            <input type="checkbox" name="pizzaToppings" value="Jalapeno"> Jalapeno<br>
-            <input type="checkbox" name="pizzaToppings" value="Pineapple"> Pineapple<br>
-        </div>
-        <div id="meats">
-            <h4>Meats:</h4>
-            <input type="checkbox" name="pizzaToppings" value="Pepperoni"> Pepperoni<br>
-            <input type="checkbox" name="pizzaToppings" value="Salami"> Salami<br>
-            <input type="checkbox" name="pizzaToppings" value="Sausage"> Sausage<br>
-            <input type="checkbox" name="pizzaToppings" value="Ham"> Ham<br>
-            <input type="checkbox" name="pizzaToppings" value="Bacon"> Bacon<br>
-            <input type="checkbox" name="pizzaToppings" value="Chicken"> Chicken<br>
-            <input type="checkbox" name="pizzaToppings" value="Beef"> Beef<br>
-        </div>
-        <button type="submit">Calculate Price</button>
-    </form>
+    <div id="pizzaForm">
+        <form id="makePizza">
+            <select id="size">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+            <div id="veggies">
+                <h4>Veggies:</h4>
+                <input type="checkbox" name="pizzaToppings" value="onion"> Onion<br>
+                <input type="checkbox" name="pizzaToppings" value="bell pepper"> Bell Pepper<br>
+                <input type="checkbox" name="pizzaToppings" value="mushroom"> Mushroom<br>
+                <input type="checkbox" name="pizzaToppings" value="garlic"> Garlic<br>
+                <input type="checkbox" name="pizzaToppings" value="olive"> Olive<br>
+                <input type="checkbox" name="pizzaToppings" value="jalapeno"> Jalapeno<br>
+                <input type="checkbox" name="pizzaToppings" value="pineapple"> Pineapple<br>
+            </div>
+            <div id="meats">
+                <h4>Meats:</h4>
+                <input type="checkbox" name="pizzaToppings" value="pepperoni"> Pepperoni<br>
+                <input type="checkbox" name="pizzaToppings" value="salami"> Salami<br>
+                <input type="checkbox" name="pizzaToppings" value="sausage"> Sausage<br>
+                <input type="checkbox" name="pizzaToppings" value="ham"> Ham<br>
+                <input type="checkbox" name="pizzaToppings" value="bacon"> Bacon<br>
+                <input type="checkbox" name="pizzaToppings" value="chicken"> Chicken<br>
+                <input type="checkbox" name="pizzaToppings" value="beef"> Beef<br>
+            </div>
+            <button type="submit">Calculate Price</button>
+        </form>
+    </div>
+
     <p id="output"></p>
 </body>
 

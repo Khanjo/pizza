@@ -1,0 +1,42 @@
+body {
+    background-image: url(image/pizza.jpg);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-size: 50pt;
+    font-weight: 100000;
+}
+
+h2 {
+    font-size: 40pt;
+    font-weight: 100000;
+}
+
+h3 {
+    font-size: 30pt;
+}
+
+#pizzaForm {
+    display: inline-block;
+    text-align: left;
+    font-size: larger;
+}
+
+#veggies {
+    float: left;
+}
+
+#meats {
+    float: right;
+}
+
+button {
+    margin: 20px;
+    margin-top: 300px;
+}
+
+#output {
+    font-size: 30pt;
+}
