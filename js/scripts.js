@@ -15,4 +15,14 @@ Pizza.prototype.sizeCost = function () {
         this.price += 16;
     }
     return this.price;
-}
+};
+
+Pizza.prototype.vegCost = function () {
+    const veggie = ["Onion", "Bell pepper", "Mushroom", "Garlic", "Olive", "Jalapeno", "Pineapple"];
+    for (let i = 0; this.toppings.length > i; ++i) {
+        if (veggie.includes(this.toppings[i])) {
+            this.price += 1;
+        }
+    }
+    return this.price;
+};
