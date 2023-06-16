@@ -26,3 +26,13 @@ Pizza.prototype.vegCost = function () {
     }
     return this.price;
 };
+
+Pizza.prototype.meatCost = function () {
+    const meat = ["Pepperoni", "Salami", "Sausage", "Ham", "Bacon", "Chicken", "Beef"];
+    for (let i = 0; this.toppings.length > i; ++i) {
+        if (meat.includes(this.toppings[i])) {
+            this.price += 2;
+        }
+    }
+    return this.price;
+};

@@ -19,3 +19,10 @@ Code:
 const myPizza = new Pizza("small", ["Olive", "Onion", "Garlic"]);
 myPizza.vegCost()
 Expected Output = 3
+
+describe: meatCost()
+Test: "It should change the pizza price for each meat added"
+Code:
+const myPizza = new Pizza("small", ["Pepperoni", "Sausage", "Salami"]);
+myPizza.meatCost()
+Expected Output = 6
