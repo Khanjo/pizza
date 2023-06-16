@@ -18,7 +18,7 @@ Pizza.prototype.sizeCost = function () {
 };
 
 Pizza.prototype.vegCost = function () {
-    const veggie = ["Onion", "Bell pepper", "Mushroom", "Garlic", "Olive", "Jalapeno", "Pineapple"];
+    const veggie = ["Onion", "Bell Pepper", "Mushroom", "Garlic", "Olive", "Jalapeno", "Pineapple"];
     for (let i = 0; this.toppings.length > i; ++i) {
         if (veggie.includes(this.toppings[i])) {
             this.price += 1;
@@ -47,8 +47,8 @@ window.addEventListener("load", function () {
         let toppingInput = [];
         let toppingChoice = document.querySelectorAll("input[name=pizzaToppings]:checked");
 
-        toppingChoice.forEach(function (value) {
-            toppingInput.push(value);
+        toppingChoice.forEach(function (element) {
+            toppingInput.push(element.value);
         });
         let pizza = new Pizza(sizeInput, toppingInput);
         pizza.sizeCost();
